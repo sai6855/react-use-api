@@ -52,7 +52,8 @@ Function which useApi returns accepts a parameter wrapperFunc, if you are using 
 ```
 
 const dispatch = useDispatch()
-
+ const [{ isLoading, isSuccess, data, error, status }, callToApi] = useApi();
+ 
   <button
       onClick={() =>
         callToApi({ payload: apiPayload, apiFunc: fetchUsersData, wrapperFunc: dispatch })
