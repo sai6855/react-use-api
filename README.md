@@ -55,10 +55,20 @@ const dispatch = useDispatch()
 
   <button
       onClick={() =>
-        callToApi({ payload: apiPayload, apiFunc: fetchUsersData,wrapperFunc:dispatch })
+        callToApi({ payload: apiPayload, apiFunc: fetchUsersData, wrapperFunc: dispatch })
       }
     >
       Hey, make a call to api
     </button>
 
 ```
+
+## props
+
+| Accepted props  | Description |
+| ------------- | ------------- |
+| payload  | payload that need to be passed to apiFunc  |
+| apiFunc  | function that interacts with api |
+| onSuccess  | call back function which will be invoked after api call is successfull |
+| onfailure  | call back function which will be invoked after api call fails |
+| wrapperFunc  | wrapper function which will be wrapped around your api call |
