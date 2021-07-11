@@ -1,6 +1,6 @@
 # react-use-api
 
-A simple react hook which return the state of your api call
+A simple react hook which returns the state of your api call
 
 ## How to use
 
@@ -53,7 +53,7 @@ Function which useApi returns accepts a parameter wrapperFunc, if you are using 
 
 const dispatch = useDispatch()
  const [{ isLoading, isSuccess, data, error, status }, callToApi] = useApi();
- 
+
   <button
       onClick={() =>
         callToApi({ payload: apiPayload, apiFunc: fetchUsersData, wrapperFunc: dispatch })
@@ -76,8 +76,8 @@ const dispatch = useDispatch()
 
 | Returned props | Description                              |
 | -------------- | ---------------------------------------- |
-| isLoading      | Can return true,false                    |
-| isSuccess      | Can return null,true,false               |
-| status         | Can return idle,pending,success,rejected |
+| isLoading      | Can return true, false                    |
+| isSuccess      | Can return null, true, false               |
+| status         | Can return idle, pending, success, rejected |
 | data           | data returned by api                     |
 | error          | error thrown by api                      |
