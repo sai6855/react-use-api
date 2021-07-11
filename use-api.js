@@ -61,14 +61,14 @@ const useApi = () => {
   const then = useCallback(
     (res) => {
       if (ref.current) {
-        localApiState.successFunction(res);
+        localApiState.successFunction(res || null);
         setLocalApiState((prevState) => ({
           ...prevState,
           isLoading: false,
           error: "",
           isSuccess: true,
           status: SUCCESS,
-          data: res,
+          data: res || null,
           startCommunication: false,
         }));
       }
@@ -79,11 +79,11 @@ const useApi = () => {
   const catchError = useCallback(
     (err) => {
       if (ref.current) {
-        localApiState.failureFunction(err);
+        localApiState.failureFunction(err || null);
         setLocalApiState((prevState) => ({
           ...prevState,
           isLoading: false,
-          error: err,
+          error: err || null,
           isSuccess: false,
           status: REJECTED,
           data: null,
