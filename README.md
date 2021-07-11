@@ -45,7 +45,7 @@ export default Example;
 
 ```
 
-## How to use with redux or other state management librarires which has wrapper function around your api calls
+## How to use with redux or other state management libraries which has wrapper function around your api calls
 
 Function which useApi returns accepts a parameter wrapperFunc, if you are using redux and needs to dispatch your api thunk function, you can add dispatch function to wrapperFunc key.
 
@@ -65,10 +65,18 @@ const dispatch = useDispatch()
 
 ## props
 
-| Accepted props  | Description |
-| ------------- | ------------- |
-| payload  | payload that need to be passed to apiFunc  |
-| apiFunc  | function that interacts with api |
-| onSuccess  | call back function which will be invoked after api call is successfull |
-| onfailure  | call back function which will be invoked after api call fails |
-| wrapperFunc  | wrapper function which will be wrapped around your api call |
+| Accepted props | Description                                                            |
+| -------------- | ---------------------------------------------------------------------- |
+| payload        | payload that need to be passed to apiFunc                              |
+| apiFunc        | function that interacts with api                                       |
+| onSuccess      | call back function which will be invoked after api call is successfull |
+| onfailure      | call back function which will be invoked after api call fails          |
+| wrapperFunc    | wrapper function which will be wrapped around your api call            |
+
+| Returned props | Description                              |
+| -------------- | ---------------------------------------- |
+| isLoading      | Can return true,false                    |
+| isSuccess      | Can return null,true,false               |
+| status         | Can return idle,pending,success,rejected |
+| data           | data returned by api                     |
+| error          | error thrown by api                      |
