@@ -44,3 +44,21 @@ export default Example;
 
 
 ```
+
+## How to use with redux or other state management librarires which has wrapper function around your api calls
+
+Function which useApi returns accepts a parameter wrapperFunc, if you are using redux and needs to dispatch your api thunk function, you can add dispatch function to wrapperFunc key.
+
+```
+
+const dispatch = useDispatch()
+
+  <button
+      onClick={() =>
+        callToApi({ payload: apiPayload, apiFunc: fetchUsersData },wrapperFunc:dispatch)
+      }
+    >
+      Hey, make a call to api
+    </button>
+
+```
