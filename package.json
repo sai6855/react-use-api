@@ -1,0 +1,30 @@
+{
+  "name": "react-use-api",
+  "version": "1.0.0",
+  "description": "A simple react hook which returns the state of your api call",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sai6855/react-use-api.git"
+  },
+  "keywords": [
+    "react",
+    "customhooks",
+    "api",
+    "data fetching",
+    "fetching"
+  ],
+  "author": "sai6855",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sai6855/react-use-api/issues"
+  },
+  "homepage": "https://github.com/sai6855/react-use-api#readme",
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
