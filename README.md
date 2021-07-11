@@ -55,7 +55,7 @@ const dispatch = useDispatch()
 
   <button
       onClick={() =>
-        callToApi({ payload: apiPayload, apiFunc: fetchUsersData },wrapperFunc:dispatch)
+        callToApi({ payload: apiPayload, apiFunc: fetchUsersData,wrapperFunc:dispatch })
       }
     >
       Hey, make a call to api
