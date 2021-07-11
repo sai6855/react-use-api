@@ -1,11 +1,11 @@
-# react-use-api
+# use-api-react
 
 A simple react hook which returns the state of your api call
 
 ## How to use
 
 ```
-import { useApi } from "react-use-api";
+import { useApi } from "use-api-react";
 import React from "react";
 
 const Example = () => {
