@@ -78,6 +78,6 @@ const dispatch = useDispatch()
 | -------------- | ---------------------------------------- |
 | isLoading      | Can return true, false                    |
 | isSuccess      | Can return null, true, false               |
-| status         | Can return idle, pending, success, rejected |
+| status         | Can return "idle", "pending", "success", "rejected" |
 | data           | data returned by api                     |
 | error          | error thrown by api                      |
