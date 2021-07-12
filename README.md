@@ -49,6 +49,8 @@ export default Example;
 
 Function which useApi returns accepts a parameter wrapperFunc, if you are using redux and needs to dispatch your api thunk function, you can add dispatch function to wrapperFunc key.
 
+**If apiFunc doesn't return a promise, very likely your app will break. So apiFunc should always be a function which returns a promise
+
 ```
 
 const dispatch = useDispatch()
