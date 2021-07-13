@@ -60,8 +60,8 @@ const useApi = () => {
 
   const then = useCallback(
     (res) => {
+      localApiState.successFunction(res || null);
       if (ref.current) {
-        localApiState.successFunction(res || null);
         setLocalApiState((prevState) => ({
           ...prevState,
           isLoading: false,
@@ -78,8 +78,8 @@ const useApi = () => {
 
   const catchError = useCallback(
     (err) => {
+      localApiState.failureFunction(err || null);
       if (ref.current) {
-        localApiState.failureFunction(err || null);
         setLocalApiState((prevState) => ({
           ...prevState,
           isLoading: false,
