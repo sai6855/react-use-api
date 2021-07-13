@@ -1,6 +1,6 @@
 {
   "name": "use-api-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple react hook which returns the state of your api call",
   "main": "index.js",
   "scripts": {
